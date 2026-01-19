@@ -2,26 +2,26 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="w-full py-32 bg-[#f6f8fd] dark:bg-[#1a2332] relative overflow-hidden flex justify-center px-6 border-b border-black/20 dark:border-white/5 transition-colors duration-500">
+    <section id="about" className="w-full py-32 bg-[#f6f8fd] text-space-cadet relative overflow-hidden flex justify-center px-6 border-b border-black/20 transition-colors duration-500">
       {/* Background "ABOUT" Text - Parallax Float */}
       <div className="absolute top-10 right-0 select-none pointer-events-none opacity-[0.07] animate-float-slow">
-         <span className="font-pixel text-[8rem] md:text-[12rem] lg:text-[15rem] leading-none text-space-cadet dark:text-white transition-colors duration-500">ABOUT</span>
+         <span className="font-pixel text-[8rem] md:text-[12rem] lg:text-[15rem] leading-none text-space-cadet transition-colors duration-500">ABOUT</span>
       </div>
 
       <div className="max-w-6xl w-full relative z-10 pt-20">
         
         {/* Pixel Heading */}
         <div className="mb-12 animate-reveal" style={{ animationDelay: '0.2s' }}>
-           <h2 className="font-pixel text-2xl md:text-4xl text-black dark:text-cream-50 tracking-tighter transition-colors duration-500">
+           <h2 className="font-pixel text-2xl md:text-4xl text-black tracking-tighter transition-colors duration-500">
              — About Me
            </h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 items-start">
             {/* Content */}
-            <div className="flex-1 space-y-8 font-jetbrains text-space-cadet/80 dark:text-cream-50/80 text-lg md:text-xl leading-relaxed transition-colors duration-500">
+            <div className="flex-1 space-y-8 font-jetbrains text-space-cadet/80 text-lg md:text-xl leading-relaxed transition-colors duration-500">
                <p className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                 I’m a <strong className="text-space-cadet dark:text-tan">B.Tech Computer Science student</strong> at <strong className="text-space-cadet dark:text-tan">ABES Engineering College</strong> (CGPA 7.7, graduating in 2027) who enjoys understanding how software systems work beyond just writing code.
+                 I’m a <strong className="text-space-cadet">B.Tech Computer Science student</strong> at <strong className="text-space-cadet">ABES Engineering College</strong> (CGPA 7.7, graduating in 2027) who enjoys understanding how software systems work beyond just writing code.
                </p>
                
                <p className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
@@ -29,14 +29,14 @@ const AboutSection: React.FC = () => {
                </p>
 
                <p className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-                 I enjoy learning new technologies and keeping up with evolving tech trends, and outside academics, I aspire to be a <strong className="text-space-cadet dark:text-tan">tech YouTuber</strong> and like listening to Punjabi music to unwind.
+                 I enjoy learning new technologies and keeping up with evolving tech trends, and outside academics, I aspire to be a <strong className="text-space-cadet">tech YouTuber</strong> and like listening to Punjabi music to unwind.
                </p>
             </div>
 
             {/* Profile Image */}
             <div className="w-full md:w-[240px] lg:w-[280px] flex-shrink-0 opacity-0 animate-fade-in-up md:-mt-12" style={{ animationDelay: '0.6s' }}>
                 <div className="relative group">
-                    <div className="absolute top-4 left-4 w-full h-full border-2 border-space-cadet/20 dark:border-tan/30 rounded-[28px] -z-10 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
+                    <div className="absolute top-4 left-4 w-full h-full border-2 border-space-cadet/20 rounded-[28px] -z-10 transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2" />
                     <div className="relative rounded-[44px] overflow-hidden transition-all duration-500 shadow-2xl">
                         {/* Placeholder Image - User needs to add 'profile.jpg' to public folder */}
                         <img 
@@ -44,7 +44,7 @@ const AboutSection: React.FC = () => {
                             alt="Krishna Gaur"
                             className="w-full h-auto object-cover aspect-[3/4]" 
                         />
-                        <div className="absolute inset-0 bg-space-cadet/0 dark:bg-black/0 mix-blend-overlay transition-opacity" />
+                        <div className="absolute inset-0 bg-space-cadet/0 mix-blend-overlay transition-opacity" />
                     </div>
 
                     {/* India Flag Badge */}
@@ -53,7 +53,7 @@ const AboutSection: React.FC = () => {
                         <img 
                             src="/india-flag.png" 
                             alt="India" 
-                            className="w-full h-auto rounded border-2 border-white dark:border-space-cadet"
+                            className="w-full h-auto rounded border-2 border-white"
                         />
                     </div>
                 </div>

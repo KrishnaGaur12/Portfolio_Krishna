@@ -30,7 +30,7 @@ const skillCategories = [
 
 const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="w-full py-24 bg-gray-200 dark:bg-[#18202f] text-space-cadet dark:text-cream-50 px-6 font-sans transition-colors duration-500">
+    <section id="skills" className="w-full py-24 bg-gray-200 text-space-cadet px-6 font-sans transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}

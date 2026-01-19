@@ -1,20 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Krishna Gaur — Portfolio
 
-# Run and deploy your AI Studio app
+Personal portfolio website showcasing my projects, skills, and journey as a **Computer Science undergraduate** with interests in **Full-Stack Development, Software Engineering, and AI/ML**.
 
-This contains everything you need to run your app locally.
+Built with a focus on clean design, strong fundamentals, and real-world engineering practices.
 
-View your app in AI Studio: https://ai.studio/apps/temp/2
+---
 
-## Run Locally
+## 🚀 Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend:** React, TypeScript, Vite  
+- **Styling:** CSS  
+- **Tools:** Node.js, Git  
+- **Deployment:** Netlify  
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🧑‍💻 Run Locally
+
+Follow these steps to run the project on your local machine.
+
+### Prerequisites
+- **Node.js** (LTS recommended)
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/KrishnaGaur12/Portfolio_Krishna.git
+Navigate to the project directory
+
+cd Portfolio_Krishna
+Install dependencies
+
+npm install
+Start the development server
+
+npm run dev
+The application will be available at:
+
+🌐 Live Website
+👉 https://krishnagaur.netlify.app/
+

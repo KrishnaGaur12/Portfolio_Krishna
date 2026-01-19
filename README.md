@@ -27,16 +27,19 @@ Follow these steps to run the project on your local machine.
 1. **Clone the repository**
    ```bash
    git clone https://github.com/KrishnaGaur12/Portfolio_Krishna.git
-Navigate to the project directory
 
-cd Portfolio_Krishna
-Install dependencies
+2. **Navigate to the project directory**
+   ```bash
+   cd Portfolio_Krishna
 
-npm install
-Start the development server
+3. **Install dependencies**
+   ```bash
+   npm install
 
-npm run dev
-The application will be available at:
+4. **Start the development server**
+   ```bash
+   npm run dev
+
 
 🌐 Live Website
 👉 https://krishnagaur.netlify.app/

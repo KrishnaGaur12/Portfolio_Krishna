@@ -15,77 +15,84 @@ const SvgCharacter: React.FC<CharacterProps> = ({ customImage }) => {
   }
 
   return (
-    <div className="relative w-full h-full flex justify-center items-end" aria-label="Cute character illustration">
+    <div className="relative w-full h-full flex justify-center items-end" aria-label="Minimal wizard boy">
       <svg
-        viewBox="0 0 400 300"
+        viewBox="0 0 200 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-[120%] h-auto transform translate-y-[10%]"
+        className="w-full h-auto opacity-90 hover:opacity-100 transition-opacity duration-500"
       >
-        {/* Back Hair (Shorter for Boy) */}
-        <path
-          d="M130 160 C120 160 110 180 110 220 L290 220 C290 180 280 160 270 160 C250 130 150 130 130 160"
-          fill="#6F4D38"
-        />
+        <defs>
+           <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+             <feGaussianBlur stdDeviation="1.5" result="blur" />
+             <feComposite in="SourceGraphic" in2="blur" operator="over" />
+           </filter>
+        </defs>
+        
+        {/* --- Minimal Magical Aura --- */}
+        <circle cx="100" cy="130" r="50" fill="#D5B893" fillOpacity="0.1" filter="url(#softBlur)" />
 
+        {/* --- Body / Robe (Simple shapes) --- */}
+        <path 
+           d="M60 180 C60 150 80 145 100 145 C120 145 140 150 140 180 V200 H60 V180 Z" 
+           fill="#25344F" 
+        />
+        {/* Collar Detail */}
+        <path d="M85 145 L100 165 L115 145" fill="#EAEAEA" opacity="0.1" />
+
+        {/* --- Head --- */}
         {/* Face Shape */}
-        <path
-          d="M110 180 C110 180 110 280 200 280 C290 280 290 180 290 180 C290 130 110 130 110 180"
-          fill="#E8D5C4"
+        <rect x="75" y="85" width="50" height="65" rx="20" fill="#F0E0D0" />
+        
+        {/* Neck Shadow */}
+        <path d="M90 148 Q100 152 110 148" stroke="#Dbb095" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+
+        {/* --- Face Features (Minimal) --- */}
+        {/* Blush */}
+        <circle cx="85" cy="125" r="3" fill="#EFA8A8" opacity="0.5" />
+        <circle cx="115" cy="125" r="3" fill="#EFA8A8" opacity="0.5" />
+
+        {/* Mouth (Tiny smile) */}
+        <path d="M96 135 Q100 137 104 135" stroke="#A68C7C" strokeWidth="1.5" strokeLinecap="round" />
+
+        {/* Eyes (Simple Dots) */}
+        <circle cx="88" cy="115" r="2.5" fill="#2A2A2A" />
+        <circle cx="112" cy="115" r="2.5" fill="#2A2A2A" />
+
+        {/* Glasses (Round, iconic) */}
+        <g stroke="#D5B893" strokeWidth="1.5" fill="none">
+            <circle cx="88" cy="115" r="9" />
+            <circle cx="112" cy="115" r="9" />
+            <path d="M97 115 H103" /> {/* Bridge */}
+        </g>
+
+        {/* --- Hair (Clean, modern) --- */}
+        <path 
+           d="M72 100 C72 75 128 75 128 100 
+              C128 100 125 90 120 95
+              C110 100 110 85 95 90
+              C80 95 85 105 72 100 Z" 
+           fill="#2A2A2A" 
         />
-        
-        {/* Freckles instead of blush */}
-        <circle cx="130" cy="220" r="2" fill="#632024" opacity="0.3" />
-        <circle cx="140" cy="215" r="2" fill="#632024" opacity="0.3" />
-        <circle cx="270" cy="220" r="2" fill="#632024" opacity="0.3" />
-        <circle cx="260" cy="215" r="2" fill="#632024" opacity="0.3" />
+        {/* Hair Detail */}
+        <path d="M72 100 V115 Q72 125 78 120" stroke="#2A2A2A" strokeWidth="4" strokeLinecap="round" />
+        <path d="M128 100 V115 Q128 125 122 120" stroke="#2A2A2A" strokeWidth="4" strokeLinecap="round" />
 
-
-        {/* Front Hair (Messy/Short Bangs) */}
-        <path
-          d="M110 170 C125 150 145 180 160 165 C180 185 220 185 240 165 C255 180 275 150 290 170 L290 180 C270 160 250 170 200 160 C150 170 130 160 110 180 Z"
-          fill="#6F4D38"
-        />
-
-        {/* Glasses Frame */}
-        <g stroke="#6F4D38" strokeWidth="8" fill="none">
-           {/* Left Lens */}
-           <circle cx="155" cy="210" r="35" fill="rgba(255,255,255,0.1)" />
-           {/* Right Lens */}
-           <circle cx="245" cy="210" r="35" fill="rgba(255,255,255,0.1)" />
-           {/* Bridge */}
-           <path d="M190 210 Q200 200 210 210" strokeWidth="6" strokeLinecap="round" />
-        </g>
-        
-        {/* Eyes */}
-        <g fill="#6F4D38">
-           <circle cx="155" cy="210" r="18" />
-           <circle cx="245" cy="210" r="18" />
+        {/* --- Minimal Floating Particles --- */}
+        <g fill="#FFF" opacity="0.6">
+           <circle cx="60" cy="100" r="1.5">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite" />
+              <animate attributeName="cy" values="100;95;100" dur="4s" repeatCount="indefinite" />
+           </circle>
+           <circle cx="140" cy="90" r="1">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite" delay="1s" />
+              <animate attributeName="cy" values="90;85;90" dur="5s" repeatCount="indefinite" />
+           </circle>
+           <path d="M130 60 L132 65 L130 70 L128 65 Z" fill="#D5B893" opacity="0.5">
+               <animate attributeName="transform" type="rotate" values="0 130 65; 360 130 65" dur="12s" repeatCount="indefinite" />
+           </path>
         </g>
 
-        {/* Star Highlights in Eyes */}
-        <g fill="#D5B893">
-            {/* Left Eye Star */}
-            <path d="M155 200 L158 207 L165 210 L158 213 L155 220 L152 213 L145 210 L152 207 Z" transform="scale(0.8) translate(30 40)" />
-             {/* Right Eye Star */}
-            <path d="M245 200 L248 207 L255 210 L248 213 L245 220 L242 213 L235 210 L242 207 Z" transform="scale(0.8) translate(50 40)" />
-        </g>
-        
-        {/* Mouth */}
-        <path d="M195 245 Q200 250 205 245" stroke="#6F4D38" strokeWidth="3" strokeLinecap="round" />
-
-        {/* Hands Gripping Edge */}
-        <g fill="#6F4D38">
-           {/* Left Hand Fingers */}
-           <rect x="80" y="270" width="16" height="30" rx="8" transform="rotate(10 80 270)" />
-           <rect x="98" y="265" width="16" height="30" rx="8" transform="rotate(5 98 265)" />
-           <rect x="116" y="265" width="16" height="30" rx="8" />
-           
-           {/* Right Hand Fingers */}
-           <rect x="268" y="265" width="16" height="30" rx="8" />
-           <rect x="286" y="265" width="16" height="30" rx="8" transform="rotate(-5 286 265)" />
-           <rect x="304" y="270" width="16" height="30" rx="8" transform="rotate(-10 304 270)" />
-        </g>
       </svg>
     </div>
   );

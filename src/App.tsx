@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import { LenisContext } from './contexts/LenisContext';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
 import PortfolioHero from './components/PortfolioHero';
 import AboutSection from './components/AboutSection';
@@ -41,21 +42,23 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <LenisContext.Provider value={lenis}>
-      <div className="antialiased bg-space-cadet">
-         <Navbar />
-         <main className="w-full">
-           <PortfolioHero />
-           <AboutSection />
-           <SkillsSection />
-           <ExperienceSection />
-           <ProjectsSection />
-           <AchievementsSection />
-           <ContactSection />
-         </main>
-         <ScrollToTop />
-      </div>
-    </LenisContext.Provider>
+    <ThemeProvider>
+      <LenisContext.Provider value={lenis}>
+        <div className="antialiased bg-space-cadet">
+          <Navbar />
+          <main className="w-full">
+            <PortfolioHero />
+            <AboutSection />
+            <SkillsSection />
+            <ProjectsSection />
+            <ExperienceSection />
+            <AchievementsSection />
+            <ContactSection />
+          </main>
+          <ScrollToTop />
+        </div>
+      </LenisContext.Provider>
+    </ThemeProvider>
   );
 };
 

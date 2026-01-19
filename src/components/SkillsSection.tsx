@@ -30,7 +30,7 @@ const skillCategories = [
 
 const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="w-full py-24 bg-gray-200 text-space-cadet px-6 font-sans">
+    <section id="skills" className="w-full py-24 bg-gray-200 dark:bg-[#18202f] text-space-cadet dark:text-cream-50 px-6 font-sans transition-colors duration-500">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
@@ -50,14 +50,14 @@ const SkillsSection: React.FC = () => {
           {skillCategories.map((cat) => (
             <div 
               key={cat.id} 
-              className="bg-white border-2 border-black p-6 h-full flex flex-col shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
+              className="bg-white border-2 border-black p-5 h-full flex flex-col shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
             >
               {/* Card Header */}
-              <div className="mb-6">
-                <div className="mb-4 text-black">
+              <div className="mb-5">
+                <div className="mb-3 text-black">
                     {cat.icon}
                 </div>
-                <h3 className="font-pixel text-xl font-bold">{cat.title}</h3>
+                <h3 className="font-pixel text-lg font-bold">{cat.title}</h3>
               </div>
 
               {/* Tags */}

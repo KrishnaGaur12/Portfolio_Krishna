@@ -59,26 +59,26 @@ const ProjectsSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="projects" className="w-full py-32 bg-[#0a0f18] text-cream-50 px-6 relative overflow-hidden">
+    <section id="projects" className="w-full py-16 md:py-28 bg-[#0a0f18] text-cream-50 px-6 relative overflow-hidden">
       
       {/* Scroll-driven Marquee */}
       <div className="absolute top-20 left-[-20%] w-[150%] pointer-events-none opacity-[0.04]">
           <div ref={marqueeRef} className="flex whitespace-nowrap will-change-transform transition-transform duration-100 ease-out">
              {/* Repeated content to ensure coverage during scroll */}
              {[...Array(6)].map((_, i) => (
-                <span key={i} className="text-[12vw] font-pixel font-bold mr-12 block">
+                <span key={i} className="text-[11vw] font-pixel font-bold mr-12 block">
                   "BUILD" "SHIP" "REPEAT" "PROJECTS"
                 </span>
              ))}
           </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto relative z-10">
+      <div className="max-w-[1350px] mx-auto relative z-10">
         
         {/* Header */}
         <div className="mb-20 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-white/10 pb-8">
            <div>
-             <h2 className="font-pixel text-4xl md:text-6xl leading-tight mb-4 text-cream-50">
+             <h2 className="font-pixel text-3xl md:text-5xl leading-tight mb-4 text-cream-50">
                Selected<br/>Works
              </h2>
              <p className="font-mono text-cream-100/60 text-sm md:text-base max-w-md">
@@ -91,11 +91,11 @@ const ProjectsSection: React.FC = () => {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div 
               key={project.id} 
-              className="bg-white/5 rounded-3xl p-8 md:p-10 border border-white/5 hover:border-tan/30 transition-all duration-300 group relative flex flex-col h-full min-h-[350px] hover:bg-white/10"
+              className="bg-white/5 rounded-3xl p-6 md:p-8 border border-white/5 hover:border-tan/30 transition-all duration-300 group relative flex flex-col h-full min-h-[300px] hover:bg-white/10"
             >
                {/* Top Row: Number & Icons */}
                <div className="flex justify-between items-center mb-8">

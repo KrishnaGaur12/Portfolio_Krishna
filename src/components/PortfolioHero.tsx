@@ -61,9 +61,9 @@ const PortfolioHero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative w-full min-h-[100dvh] md:h-screen md:min-h-[650px] flex items-center justify-center p-2 md:p-4 overflow-hidden font-sans snap-start">
+    <section id="home" className="relative w-full h-[100svh] md:h-screen md:min-h-[650px] flex items-center justify-center p-2 md:p-4 overflow-hidden font-sans snap-start">
       {/* Main Card Container */}
-      <div className="relative w-full h-full min-h-[100dvh] md:min-h-0 bg-glass-gradient rounded-[1.5rem] md:rounded-[2.25rem] shadow-2xl overflow-hidden flex flex-col items-center justify-between border border-white/10 transition-all duration-300 py-10 md:py-0">
+      <div className="relative w-full h-full md:min-h-0 bg-glass-gradient rounded-[1.5rem] md:rounded-[2.25rem] shadow-2xl overflow-hidden flex flex-col items-center justify-between border border-white/10 transition-all duration-300 py-10 md:py-0">
         
         {/* Subtle Grain Overlay */}
         <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}></div>

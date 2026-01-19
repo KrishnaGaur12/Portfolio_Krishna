@@ -194,7 +194,7 @@ const PortfolioHero: React.FC = () => {
           {/* Floating Cubes - Updated Labels */}
           
           {/* Floating Lightning Bolt (Left - High) */}
-          <div className="absolute top-[15%] left-[5%] md:left-[20%] animate-float-slow opacity-90 z-0 scale-75 md:scale-100" style={{ animationDelay: '0.5s', transform: 'rotate(-15deg)' }}>
+          <div className="absolute top-[8%] left-[5%] md:top-[15%] md:left-[20%] animate-float-slow opacity-90 z-0 scale-75 md:scale-100" style={{ animationDelay: '0.5s', transform: 'rotate(-15deg)' }}>
              <svg width="100" height="120" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflow: 'visible' }}>
                <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
                  <feDropShadow dx="0" dy="4" stdDeviation="15" floodColor="rgba(255, 215, 0, 0.6)" />
@@ -211,8 +211,8 @@ const PortfolioHero: React.FC = () => {
              </svg>
           </div>
 
-          {/* Floating Lightning Bolt (Right - Mid) */}
-          <div className="absolute bottom-[45%] right-[5%] md:right-[20%] animate-float-delayed opacity-80 z-0 scale-75 md:scale-100" style={{ animationDelay: '1.5s', transform: 'rotate(10deg)' }}>
+          {/* Floating Lightning Bolt (Right - Low) */}
+          <div className="absolute bottom-[18%] right-[5%] md:bottom-[45%] md:right-[20%] animate-float-delayed opacity-80 z-0 scale-75 md:scale-100" style={{ animationDelay: '1.5s', transform: 'rotate(10deg)' }}>
              <svg width="80" height="100" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ overflow: 'visible' }}>
                <g transform="translate(20, 20)">
                   <path 
@@ -226,13 +226,13 @@ const PortfolioHero: React.FC = () => {
              </svg>
           </div>
 
-          <FloatingCube label="Java" size={60} className="bottom-[15%] left-[5%] md:left-[10%] animate-float-slow scale-75 md:scale-100" animationDelay="0s" />
-          <FloatingCube label="C++" size={50} className="bottom-[30%] right-[5%] md:right-[10%] animate-float-medium scale-75 md:scale-100" animationDelay="1s" />
-          <FloatingCube label="AWS" size={40} className="top-[25%] left-[5%] md:left-[15%] animate-float-fast opacity-90 scale-75 md:scale-100" animationDelay="2s" />
-          <FloatingCube label="Node" size={45} className="top-[30%] right-[5%] md:right-[15%] animate-float-slow opacity-90 scale-75 md:scale-100" animationDelay="1.5s" />
-          <FloatingCube label="Python" size={55} className="top-[35%] left-[2%] md:left-[8%] animate-float-medium opacity-80 scale-75 md:scale-100" animationDelay="0.5s" />
-          <FloatingCube label="AI/ML" size={48} className="bottom-[25%] right-[2%] md:right-[20%] animate-float-fast opacity-85 scale-75 md:scale-100" animationDelay="2.5s" />
-          <FloatingCube label="Spring" size={42} className="top-[15%] right-[10%] md:right-[5%] animate-float-slow opacity-75 scale-75 md:scale-100" animationDelay="3s" />
+          <FloatingCube label="Java" size={60} className="bottom-[5%] left-[5%] md:bottom-[15%] md:left-[10%] animate-float-slow scale-75 md:scale-100" animationDelay="0s" />
+          <FloatingCube label="C++" size={50} className="bottom-[5%] right-[5%] md:bottom-[30%] md:right-[10%] animate-float-medium scale-75 md:scale-100" animationDelay="1s" />
+          <FloatingCube label="AWS" size={40} className="top-[5%] left-[5%] md:top-[25%] md:left-[15%] animate-float-fast opacity-90 scale-75 md:scale-100" animationDelay="2s" />
+          <FloatingCube label="Node" size={45} className="top-[5%] right-[5%] md:top-[30%] md:right-[15%] animate-float-slow opacity-90 scale-75 md:scale-100" animationDelay="1.5s" />
+          <FloatingCube label="Python" size={55} className="top-[12%] left-[2%] md:top-[35%] md:left-[8%] animate-float-medium opacity-80 scale-75 md:scale-100" animationDelay="0.5s" />
+          <FloatingCube label="AI/ML" size={48} className="bottom-[12%] right-[2%] md:bottom-[25%] md:right-[20%] animate-float-fast opacity-85 scale-75 md:scale-100" animationDelay="2.5s" />
+          <FloatingCube label="Spring" size={42} className="top-[12%] right-[10%] md:top-[15%] md:right-[5%] animate-float-slow opacity-75 scale-75 md:scale-100" animationDelay="3s" />
 
         </div>
 

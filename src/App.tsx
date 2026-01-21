@@ -51,8 +51,8 @@ const App: React.FC = () => {
             <AboutSection />
             <SkillsSection />
             <ProjectsSection />
-            <ExperienceSection />
             <AchievementsSection />
+            <ExperienceSection />
             <ContactSection />
           </main>
           <ScrollToTop />

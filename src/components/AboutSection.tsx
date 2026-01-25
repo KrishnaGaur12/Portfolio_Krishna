@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
             {/* Content */}
             <div className="flex-1 space-y-8 font-jetbrains text-space-cadet/80 text-lg md:text-xl leading-relaxed transition-colors duration-500">
                <p className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                 I’m a <strong className="text-space-cadet">Bachelor of Technology in Computer Science and Engineering student</strong> at <strong className="text-space-cadet">ABES Engineering College</strong> (graduating in 2027) who enjoys understanding how software systems work beyond just writing code.
+                 I’m a <strong className="text-space-cadet">Bachelor of Technology student in Computer Science and Engineering</strong> at <strong className="text-space-cadet">ABES Engineering College</strong> (graduating in 2027) who enjoys understanding how software systems work beyond just writing code.
                </p>
                
                <p className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
